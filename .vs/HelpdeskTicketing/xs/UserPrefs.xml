@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{FCAC5F23-132D-41CE-B150-CEDC55446C0D}|Default">
+  <MonoDevelop.Ide.ItemProperties.HelpdeskTicketing PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelpdeskTicketing/Services/MessageService.cs">
+    <Files>
+      <File FileName="HelpdeskTicketing/Models/User.cs" Line="8" Column="36" />
+      <File FileName="HelpdeskTicketing/Startup.cs" Line="39" Column="1" />
+      <File FileName="HelpdeskTicketing/Program.cs" />
+      <File FileName="HelpdeskTicketing/appsettings.Development.json" />
+      <File FileName="HelpdeskTicketing/Properties/launchSettings.json" />
+      <File FileName="HelpdeskTicketing/Controllers/UserController.cs" Line="74" Column="28" />
+      <File FileName="HelpdeskTicketing/Controllers/MessageController.cs" Line="9" Column="36" />
+      <File FileName="HelpdeskTicketing/Models/Message.cs" Line="8" Column="36" />
+      <File FileName="HelpdeskTicketing/Services/UserService.cs" Line="51" Column="1" />
+      <File FileName="HelpdeskTicketing/appsettings.json" Line="9" Column="2" />
+      <File FileName="HelpdeskTicketing/Models/HelpdeskDatabaseSettings.cs" Line="19" Column="28" />
+      <File FileName="HelpdeskTicketing/Services/MessageService.cs" Line="12" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HelpdeskTicketing" expanded="True">
+            <Node name="HelpdeskTicketing" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="MessageService.cs" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
