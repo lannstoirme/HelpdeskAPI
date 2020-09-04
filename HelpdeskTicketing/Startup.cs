@@ -39,6 +39,10 @@ namespace HelpdeskTicketing
 
             services.AddSingleton<MessageService>();
 
+            services.AddSingleton<DepartmentService>();
+
+            services.AddSingleton<OutcomeService>();
+
             services.AddControllers();
         }
 
