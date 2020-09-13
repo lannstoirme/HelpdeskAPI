@@ -72,5 +72,12 @@ namespace HelpdeskTicketing
 
         public string GeneralSentiment { get; set; }
 
+        public string FullName
+        {
+            get
+            { return $"{ FirstName } + ' ' + { LastName }";
+            }
+        }
+
     }
 }

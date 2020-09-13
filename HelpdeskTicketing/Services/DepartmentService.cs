@@ -24,7 +24,7 @@ namespace HelpdeskTicketing.Services
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
 
-            _departments = database.GetCollection<Department>(settings.MessageCollectionsName);
+            _departments = database.GetCollection<Department>(settings.DepartmentCollectionsName);
         }
 
         public List<Department> Get() =>

@@ -17,13 +17,7 @@ namespace HelpdeskTicketing.Controllers
     {
 
 
-        // private readonly ILogger<UserController> _logger;
         private readonly UserService _userService;
-
-        //public UserController(ILogger<UserController> logger)
-        //{
-        //    _logger = logger;
-        //}
 
         public UserController(UserService userService)
         {
@@ -85,14 +79,6 @@ namespace HelpdeskTicketing.Controllers
 
             return NoContent();
         }
-        //public IEnumerable<User> Get()
-        //{
-        //    var client = new MongoClient("mongodb+srv://lannstoirme:Vienna1988!@cluster0.nwr3l.azure.mongodb.net/AsgardiaDB?retryWrites=true&w=majority");
-        //    var database = client.GetDatabase("AsgardiaDB");
-        //    var collection = database.GetCollection<User>("UserData");
-
-        //    return collection.Find(s => s.NativeLanguage == "English").ToList();
-
-        //}
+        
     }
 }

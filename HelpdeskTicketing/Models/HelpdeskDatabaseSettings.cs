@@ -12,6 +12,7 @@ namespace HelpdeskTicketing.Models
     {
         public string UserCollectionsName { get; set; }
         public string MessageCollectionsName { get; set; }
+        public string DepartmentCollectionsName { get; set; }
         public string ConnectionString { get; set; }
         public string DatabaseName { get; set; }
     }
@@ -20,6 +21,7 @@ namespace HelpdeskTicketing.Models
     {
         string UserCollectionsName { get; set; }
         string MessageCollectionsName { get; set; }
+        string DepartmentCollectionsName { get; set; }
         string ConnectionString { get; set; }
         string DatabaseName { get; set; }
 

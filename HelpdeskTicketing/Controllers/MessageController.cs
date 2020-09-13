@@ -18,14 +18,10 @@ namespace HelpdeskTicketing.Controllers
     {
 
 
-        // private readonly ILogger<UserController> _logger;
+    
         private readonly MessageService _messageService;
 
-        //public UserController(ILogger<UserController> logger)
-        //{
-        //    _logger = logger;
-        //}
-
+        
         public MessageController(MessageService messageService)
         {
             _messageService = messageService;
@@ -60,9 +56,9 @@ namespace HelpdeskTicketing.Controllers
         [HttpPut("{Id}")]
         public IActionResult Update(string id, Message messageIn)
         {
-            var user = _messageService.Get(id);
+            var message = _messageService.Get(id);
 
-            if (user == null)
+            if (message == null)
             {
                 return NotFound();
             }
@@ -86,14 +82,6 @@ namespace HelpdeskTicketing.Controllers
 
             return NoContent();
         }
-        //public IEnumerable<User> Get()
-        //{
-        //    var client = new MongoClient("mongodb+srv://lannstoirme:Vienna1988!@cluster0.nwr3l.azure.mongodb.net/AsgardiaDB?retryWrites=true&w=majority");
-        //    var database = client.GetDatabase("AsgardiaDB");
-        //    var collection = database.GetCollection<User>("UserData");
-
-        //    return collection.Find(s => s.NativeLanguage == "English").ToList();
-
-        //}
+       
     }
 }

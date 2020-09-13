@@ -17,9 +17,6 @@ namespace HelpdeskTicketing.Services
         public MessageService(IHelpdeskDatabaseSettings settings)
         {
 
-            //var client = new MongoClient("mongodb+srv://lannstoirme:Vienna1988!@cluster0.nwr3l.azure.mongodb.net/AsgardiaDB?retryWrites=true&w=majority");
-            //var database = client.GetDatabase("AsgardiaDB");
-
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
 
@@ -27,7 +24,7 @@ namespace HelpdeskTicketing.Services
         }
 
         public List<Message> Get() =>
-            _messages.Find(user => true).ToList();
+            _messages.Find(message => true).ToList();
 
         public Message Get(string id) =>
             _messages.Find<Message>(message => message.Id == id).FirstOrDefault();
