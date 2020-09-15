@@ -45,7 +45,7 @@ namespace HelpdeskTicketing.Controllers
         [HttpPost]
         public ActionResult<Meeting> Create(Meeting meeting)
         {
-            _issueService.Create(meeting);
+            _meetingService.Create(meeting);
 
             return CreatedAtRoute("GetMeeting", new { id = meeting.Id.ToString() }, meeting);
         }

@@ -1,8 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using MongoDB.Driver;
+using MongoDB.Bson;
+using Microsoft.AspNetCore.Routing;
+using HelpdeskTicketing.Services;
+using HelpdeskTicketing.Models;
+
 namespace HelpdeskTicketing.Controllers
 {
-    public class OutcomeController
-    {
+    
         [ApiController]
         [Route("[controller]")]
         public class OutcomeController : ControllerBase
@@ -72,4 +82,5 @@ namespace HelpdeskTicketing.Controllers
                 return NoContent();
             }
         }
-}
+    }
+

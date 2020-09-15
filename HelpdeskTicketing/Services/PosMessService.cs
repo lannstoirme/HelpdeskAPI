@@ -8,14 +8,18 @@ using System.Linq;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 using System.Collections;
+using Microsoft.AspNetCore.Mvc;
 
 
 //API endpoint return messages and users that offered positive feedback
 namespace HelpdeskTicketing.Services
     {
+
+
     public class PosMessService
     {
         //public List<PosMess> = new List<PosMess>();
+       
 
         private readonly IMongoCollection<Message> _messages;
         private readonly IMongoCollection<User> _users;
@@ -31,6 +35,16 @@ namespace HelpdeskTicketing.Services
 
 
          
+        }
+
+        internal ActionResult Get()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal ActionResult Get(string id)
+        {
+            throw new NotImplementedException();
         }
 
         //Get all positive messages and add to a list
@@ -49,7 +63,11 @@ namespace HelpdeskTicketing.Services
                 posMessagesList.Add(item);
             }
 
+           
         }
+
+        
+        //public PosMessages Get(string Id)
 
         //TO DO Add Controller and Get function
        

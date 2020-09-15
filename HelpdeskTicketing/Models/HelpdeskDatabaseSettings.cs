@@ -15,6 +15,10 @@ namespace HelpdeskTicketing.Models
         public string DepartmentCollectionsName { get; set; }
         public string ConnectionString { get; set; }
         public string DatabaseName { get; set; }
+        public string IssueCollectionsName { get; set; }
+        public string OutcomeCollectionsName { get; set; }
+        public string ResponseCollectionsName { get; set; }
+        public string MeetingCollectionsName { get; set; }
     }
 
     public interface IHelpdeskDatabaseSettings
@@ -24,6 +28,10 @@ namespace HelpdeskTicketing.Models
         string DepartmentCollectionsName { get; set; }
         string ConnectionString { get; set; }
         string DatabaseName { get; set; }
+        string IssueCollectionsName { get; set; }
+        string OutcomeCollectionsName { get; set; }
+        string ResponseCollectionsName { get; set; }
+        string MeetingCollectionsName { get; set; }
 
     }
 }

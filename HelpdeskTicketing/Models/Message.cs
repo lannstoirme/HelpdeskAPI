@@ -55,6 +55,6 @@ namespace HelpdeskTicketing.Models
         public bool EscalateToIssue { get; set; }
 
         [BsonElement("priorityassigned")]
-        public bool PriorityAssigned { get; set; }
+        public int PriorityAssigned { get; set; }
     }
 }

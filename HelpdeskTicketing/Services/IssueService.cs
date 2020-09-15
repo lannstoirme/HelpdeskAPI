@@ -1,11 +1,11 @@
 ﻿using System;
-using System;
 using HelpdeskTicketing.Models;
 using System.Collections.Generic;
 using System.Linq;
 using MongoDB.Driver;
 using HelpdeskTicketing.Controllers;
 using Microsoft.AspNetCore.Routing;
+using MongoDB.Driver.Linq;
 
 
 
@@ -33,8 +33,8 @@ namespace HelpdeskTicketing.Services
 
         public Issue Create(Issue issue)
         {
-            _issues.InsertOne(department);
-            return ;
+            _issues.InsertOne(issue);
+            return issue;
         }
 
         public void Update(string id, Issue issueIn) =>
@@ -44,7 +44,7 @@ namespace HelpdeskTicketing.Services
             _issues.DeleteOne(issue => issue.Id == issueIn.Id);
 
         public void Remove(string id) =>
-            _departments.DeleteOne(issue => issue.Id == id);
+            _issues.DeleteOne(issue => issue.Id == id);
     }
 
 }

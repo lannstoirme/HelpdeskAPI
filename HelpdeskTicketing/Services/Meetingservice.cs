@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using HelpdeskTicketing.Models;
 using System.Collections.Generic;
 using System.Linq;
