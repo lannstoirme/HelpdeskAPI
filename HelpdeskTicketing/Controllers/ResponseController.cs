@@ -19,7 +19,7 @@ namespace HelpdeskTicketing.Controllers
 
         private readonly ResponseService _responseService;
 
-        public ResponseController(responseService responseService)
+        public ResponseController(ResponseService responseService)
         {
             _responseService = responseService;
         }
