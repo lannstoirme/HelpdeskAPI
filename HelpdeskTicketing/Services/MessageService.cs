@@ -29,6 +29,10 @@ namespace HelpdeskTicketing.Services
         public Message Get(string id) =>
             _messages.Find<Message>(message => message.Id == id).FirstOrDefault();
 
+        //Get Sentiment Filter
+       
+
+       // public Message Get()
         public Message Create(Message message)
         {
             _messages.InsertOne(message);

@@ -48,7 +48,7 @@ namespace HelpdeskTicketing.Controllers
         [HttpPost]
         public ActionResult<Department> Create(Department department)
         {
-            _messageService.Create(department);
+            _departmentService.Create(department);
 
             return CreatedAtRoute("GetDepartment", new { id = department.Id.ToString() }, department);
         }

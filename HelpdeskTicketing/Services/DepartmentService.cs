@@ -12,7 +12,7 @@ namespace HelpdeskTicketing.Services
 {
     public class DepartmentService
     {
-        private readonly IMongoCollection<Department> _messages;
+        private readonly IMongoCollection<Department> _departments;
 
         public DepartmentService(IHelpdeskDatabaseSettings settings)
         {

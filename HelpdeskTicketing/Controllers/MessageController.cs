@@ -9,22 +9,25 @@ using MongoDB.Bson;
 using Microsoft.AspNetCore.Routing;
 using HelpdeskTicketing.Services;
 using HelpdeskTicketing.Models;
+using System.Collections;
 
 namespace HelpdeskTicketing.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    
     public class MessageController : ControllerBase
     {
 
 
-    
-        private readonly MessageService _messageService;
 
-        
-        public MessageController(MessageService messageService)
+        private readonly MessageService _messageService;
+        private readonly UserService _userService;
+
+        public MessageController(MessageService messageService, UserService userService)
         {
             _messageService = messageService;
+            _userService = userService;
         }
 
         [HttpGet]
@@ -32,7 +35,10 @@ namespace HelpdeskTicketing.Controllers
             _messageService.Get();
 
 
+
+
         [HttpGet("{Id}", Name = "GetMessage")]
+
         public ActionResult<Message> Get(string id)
         {
             var message = _messageService.Get(id);
@@ -44,6 +50,31 @@ namespace HelpdeskTicketing.Controllers
 
             return message;
         }
+
+        [Route("[controller]/[action]")]
+        public IActionResult PosSentiment()
+        {
+            //move this back into messageservice
+
+            var posmessages = from message in _messageService.Get()
+                join user in _userService.Get() on message.Id equals user.Id into userPositiveMessageGroup
+                where message.SentimentApplied == true && message.Sentiment == "positive"
+                select userPositiveMessageGroup;
+
+
+            var posMessagesList = new ArrayList();
+
+            foreach (var item in posmessages)
+            {
+                posMessagesList.Add(item);
+            }
+
+            return (IActionResult)posMessagesList;
+                
+        }
+
+       
+
 
         [HttpPost]
         public ActionResult<Message> Create(Message message)

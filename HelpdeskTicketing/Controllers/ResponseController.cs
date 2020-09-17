@@ -45,7 +45,7 @@ namespace HelpdeskTicketing.Controllers
         [HttpPost]
         public ActionResult<Response> Create(Response response)
         {
-            _issueService.Create(response);
+            _responseService.Create(response);
 
             return CreatedAtRoute("GetResponse", new { id = response.Id.ToString() }, response);
         }
@@ -75,7 +75,7 @@ namespace HelpdeskTicketing.Controllers
                 return NotFound();
             }
 
-            _responseService.Remove(issue.Id);
+            _responseService.Remove(response.Id);
 
             return NoContent();
         }
