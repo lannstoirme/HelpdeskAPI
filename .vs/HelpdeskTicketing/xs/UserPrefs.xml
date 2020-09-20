@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{FCAC5F23-132D-41CE-B150-CEDC55446C0D}|Default">
   <MonoDevelop.Ide.ItemProperties.HelpdeskTicketing PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelpdeskTicketing/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelpdeskTicketing/Controllers/PositiveMessageController.cs">
     <Files>
       <File FileName="HelpdeskTicketing/Models/Issue.cs" Line="10" Column="35" />
       <File FileName="HelpdeskTicketing/Controllers/IssueController.cs" />
@@ -14,7 +14,7 @@
       <File FileName="HelpdeskTicketing/Controllers/UserController.cs" />
       <File FileName="HelpdeskTicketing/Models/User.cs" />
       <File FileName="HelpdeskTicketing/Services/UserService.cs" />
-      <File FileName="HelpdeskTicketing/appsettings.json" Line="10" Column="63" />
+      <File FileName="HelpdeskTicketing/appsettings.json" />
       <File FileName="HelpdeskTicketing/Models/Message.cs" />
       <File FileName="HelpdeskTicketing/Models/Department.cs" />
       <File FileName="HelpdeskTicketing/Startup.cs" />
@@ -27,17 +27,20 @@
       <File FileName="HelpdeskTicketing/Services/OutcomeService.cs" />
       <File FileName="HelpdeskTicketing/Controllers/DepartmentController.cs" />
       <File FileName="HelpdeskTicketing/Services/PositiveMessageService.cs" />
+      <File FileName="HelpdeskTicketing/Controllers/PositiveMessageController.cs" Line="28" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HelpdeskTicketing" expanded="True">
             <Node name="HelpdeskTicketing" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="PositiveMessageController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" expanded="True" selected="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
