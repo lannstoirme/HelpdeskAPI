@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{FCAC5F23-132D-41CE-B150-CEDC55446C0D}|Default">
   <MonoDevelop.Ide.ItemProperties.HelpdeskTicketing PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelpdeskTicketing/Controllers/PositiveMessageController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelpdeskTicketing/Services/PositiveMessageService.cs">
     <Files>
       <File FileName="HelpdeskTicketing/Models/Issue.cs" Line="10" Column="35" />
       <File FileName="HelpdeskTicketing/Controllers/IssueController.cs" />
@@ -8,25 +8,25 @@
       <File FileName="HelpdeskTicketing/Models/Response.cs" />
       <File FileName="HelpdeskTicketing/Models/Meeting.cs" />
       <File FileName="HelpdeskTicketing/Services/Meetingservice.cs" />
-      <File FileName="HelpdeskTicketing/Services/Responseservice.cs" />
+      <File FileName="HelpdeskTicketing/Services/Responseservice.cs" Line="47" Column="6" />
       <File FileName="HelpdeskTicketing/Controllers/MeetingController.cs" />
-      <File FileName="HelpdeskTicketing/Controllers/ResponseController.cs" />
+      <File FileName="HelpdeskTicketing/Controllers/ResponseController.cs" Line="1" Column="1" />
       <File FileName="HelpdeskTicketing/Controllers/UserController.cs" />
-      <File FileName="HelpdeskTicketing/Models/User.cs" />
+      <File FileName="HelpdeskTicketing/Models/User.cs" Line="1" Column="1" />
       <File FileName="HelpdeskTicketing/Services/UserService.cs" />
-      <File FileName="HelpdeskTicketing/appsettings.json" />
-      <File FileName="HelpdeskTicketing/Models/Message.cs" />
+      <File FileName="HelpdeskTicketing/appsettings.json" Line="10" Column="58" />
+      <File FileName="HelpdeskTicketing/Models/Message.cs" Line="58" Column="50" />
       <File FileName="HelpdeskTicketing/Models/Department.cs" />
       <File FileName="HelpdeskTicketing/Startup.cs" />
-      <File FileName="HelpdeskTicketing/Controllers/MessageController.cs" />
-      <File FileName="HelpdeskTicketing/Services/MessageService.cs" />
+      <File FileName="HelpdeskTicketing/Controllers/MessageController.cs" Line="1" Column="1" />
+      <File FileName="HelpdeskTicketing/Services/MessageService.cs" Line="1" Column="1" />
       <File FileName="HelpdeskTicketing/Models/HelpdeskDatabaseSettings.cs" />
       <File FileName="HelpdeskTicketing/Program.cs" />
       <File FileName="HelpdeskTicketing/Controllers/OutcomeController.cs" />
       <File FileName="HelpdeskTicketing/Services/DepartmentService.cs" />
       <File FileName="HelpdeskTicketing/Services/OutcomeService.cs" />
       <File FileName="HelpdeskTicketing/Controllers/DepartmentController.cs" />
-      <File FileName="HelpdeskTicketing/Services/PositiveMessageService.cs" />
+      <File FileName="HelpdeskTicketing/Services/PositiveMessageService.cs" Line="145" Column="43" />
       <File FileName="HelpdeskTicketing/Controllers/PositiveMessageController.cs" Line="28" Column="37" />
     </Files>
     <Pads>
@@ -34,12 +34,12 @@
         <State name="__root__">
           <Node name="HelpdeskTicketing" expanded="True">
             <Node name="HelpdeskTicketing" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="PositiveMessageController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Services" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="PositiveMessageService.cs" selected="True" />
+              </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>

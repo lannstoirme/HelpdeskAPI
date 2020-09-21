@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HelpdeskTicketing.Services;
 using Microsoft.AspNetCore.Mvc;
+using static HelpdeskTicketing.Services.PositiveMessageService;
 
 namespace HelpdeskTicketing.Controllers
 {
@@ -20,24 +21,24 @@ namespace HelpdeskTicketing.Controllers
             
         }
 
-
-
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { };
-        }
-        //public ActionResult Get()
-        //{
-        //    var positivemessage = _positivemessageService.Get();
-        //
-        //    if (positivemessage == null)
-        //    {
-        //        return NotFound();
-        //    }
+        public ActionResult<List<PositiveMessages>> Get() =>
+             _positivemessageService.Get();
 
-          //  return (ActionResult)positivemessage;
-        //}
+
+        [HttpGet("{Id}", Name = "GetPositiveMessage")]
+        public ActionResult<PositiveMessages> Get(string id)
+        {
+            var positivemessage = _positivemessageService.Get(id);
+
+            if (positivemessage == null)
+            {
+                return NotFound();
+            }
+
+            return positivemessage;
+        }
+       
 
     }
 }
